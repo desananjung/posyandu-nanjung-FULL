@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --primary:#1A5D1A;
+  --primary-2:#123F12;
+  --primary-light:#E8F5E9;
+  --accent:#F4B400;
+  --accent-light:#FFF8DC;
+  --bg:#FEFEFE;
+  --surface:#FFFFFF;
+  --surface-2:#F6F7F2;
+  --border:#E9EDE4;
+  --text:#1A2E1A;
+  --text-muted:#6B7D6B;
+  --success:#1A5D1A;
+  --warning:#F4B400;
+  --danger:#D92D20;
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0F1A0F;
+    --surface:#162016;
+    --surface-2:#1D2A1D;
+    --border:#253525;
+    --text:#E8F0E8;
+    --text-muted:#8FA88F;
+  }
+}
+
+body{
+  font-family: "Instrument Sans", "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+h1,h2,h3,.display{
+  font-family: "Newsreader", "Fraunces", Georgia, serif;
+  letter-spacing:-0.02em;
+  font-weight:700;
+}
+
+::-webkit-scrollbar{ width:6px; height:6px; }
+::-webkit-scrollbar-thumb{ background:var(--border); border-radius:10px; }
+
+* { min-width:0; }
